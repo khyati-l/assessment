@@ -1,49 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Sugar and Smiles - Coffee</title>
-    <link rel="icon" href="/images/favicon.ico"/>
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="main stylesheet" type="text/css" href="/css/main style.css">
+      <link rel="coffee stylesheet" type="text/css" href="/css/coffee.css">
+      <script src="/scripts/coffee.js"></script>
+      <title>Sugar and Smiles - Coffee</title>
+      <link rel="icon" href="/images/common/favicon.ico"/>
+  </head>
 
-<body>
-    <!-- Start of Navigation Bar and Banner Text -->
+  <body>
     <div id="container">
-		    <div id="mainpic">
-        	    <h1>Sugar <span class="lighter">and Smiles</span></h1>
-                <h2>...to beat the bitternes of life</h2>
-            </div>   
-
-            <div id="menu">
-        	    <ul>
-            	    <li class="menuitem"><a href="index.html">Home</a></li>
-                    <li class="menuitem"><a href="coffee.html">Coffee</a></li>
-                    <li class="menuitem"><a href="pattisserie.html">Pattisserie</a></li>
-                    <li class="menuitem"><a href="quiz.html">Quiz</a></li>
-                    <li class="menuitem"><a href="about.html">About</a></li>
-                </ul>
-             </div>
+      <!-- Start of Navigation Bar and Banner Text -->
+      <img class="banner" src="/images/common/banner.png">
+      <div id="menu">
+        <ul>
+          <li class="menuitem"><a href="/html/index.html">HOME</a></li>
+          <li class="menuitem"><a href="/html/coffee.html">COFFEE</a></li>
+          <li class="menuitem"><a href="/html/pattisserie.html">PATTISSERIE</a></li>
+          <li class="menuitem"><a href="/html/reviews.html">REVIEWS</a></li>
+          <li class="menuitem"><a href="/html/reviews.html">ABOUT</a></li>
+        </ul>
+      </div>
     <!-- End of Navigation Bar and Banner Text -->
     
     <!-- Start of Main Page Content and Footer -->
-	    <div id="content"></div>
-        	    <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-           	    <p>&nbsp;</p>
-       	    <h3>This is COFFEE</h3>
-               <p><img src="/images/black.jpeg" alt="black" style="float:right;width:42px;height:42px;">
-                The image will float to the right of the text.</p>
-                
-                <p><img src="/images/white.jpg" alt="white" style="float:left;width:42px;height:42px;">
-                The image will float to the left of the text.</p>
-            
-            <div id="footer"><h3>Sugar and Smiles 2021</h3></div>
-        </div>
-    <!-- Start of Main Page Content and Footer -->
-    </div>
-</body>
+      <div id="content"></div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <h1>Coffee</h1>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <h4>Delicious, handcrafted beverages and great-tasting food. The secret to making life better.</h4>
+            <p>Hover on image toview more information. Serving size is 350mL.</p>
+
+          <!-- Start of Coffee Images -->
+            <div class="row">
+              <div class="column">
+                <img onmouseover="displayFlatWhite(this)" onmouseout="flatWhiteCloseWindow(this)" src="/images/coffee/flat white.png">
+                  <h3>Flat White</h3>
+              </div>
+
+              <div class="column">
+                <img onmouseover="displayLongBlack(this)" onmouseout="longBlackCloseWindow(this)" src="/images/coffee/long black.png" >
+                  <h3>Long Black</h3>
+              </div>
+
+              <div class="column">
+                <img onmouseover="displayLatte(this)" onmouseout="latteCloseWindow(this)" src="/images/coffee/latte.png" >
+                  <h3>Latte</h3>
+              </div>
+            </div>
+          <!-- End of Coffee Images -->
+
+        <!-- Start of Information Panels -->
+
+          <!-- Flat White Panel Start-->
+            <div class="flatWhitePanel" id="flatWhitePanelID">
+              <h3>Nutritional Information</h3>
+              <table>
+                <tr>
+                  <th> </th>
+                  <th>per Serving</th>
+                  <th>per 100mL</th>
+                </tr>
+
+                <tr>
+                  <td>Energy</td>
+                  <td>650kJ</td>
+                  <td>186kJ</td>
+                </tr>
+
+                <tr>
+                  <td>Protein</td>
+                  <td>8.5g</td>
+                  <td>2.4g</td>
+                </tr>
+
+                <tr>
+                  <td>Carbs</td>
+                  <td>13.8g</td>
+                  <td>3.9g</td>
+                </tr>
+              </table>
+            </div>
+          <!-- Flat White Panel End-->
+
+          <!-- Long Black Panel Start-->
+            <div class="longBlackPanel" id="longBlackPanelID">
+              <h3>Nutritional Information</h3>
+              <table>
+                <tr>
+                  <th> </th>
+                  <th>per Serving</th>
+                  <th>per 100mL</th>
+                </tr>
+
+                <tr>
+                  <td>Energy</td>
+                  <td>91kJ</td>
+                  <td>>40kJ</td>
+                </tr>
+
+                <tr>
+                  <td>Protein</td>
+                  <td>1.4g</td>
+                  <td>>1g</td>
+                </tr>
+
+                <tr>
+                  <td>Carbs</td>
+                  <td>3.7g</td>
+                  <td>1.1g</td>
+                </tr>
+              </table>
+            </div>
+          <!-- Long Black Panel End-->
+
+          <!-- Latte Panel Start-->
+            <div class="lattePanel" id="lattePanelID">
+              <h3>Nutritional Information</h3>
+              <table>
+                <tr>
+                  <th> </th>
+                  <th>per Serving</th>
+                  <th>per 100mL</th>
+                </tr>
+
+                <tr>
+                  <td>Energy</td>
+                  <td>676kJ</td>
+                  <td>193kJ</td>
+                </tr>
+
+                <tr>
+                  <td>Protein</td>
+                  <td>8.9g</td>
+                  <td>2.5g</td>
+                </tr>
+
+                <tr>
+                  <td>Carbs</td>
+                  <td>14.3g</td>
+                  <td>4.1g</td>
+                </tr>
+              </table>
+            </div>
+          <!-- Latte Panel End-->
+      
+          <!-- Start Footer -->
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+            <a href="#"><img src="/images/common/button.jpeg" class="hyperlink"></a>
+            <div id="footer"><h6>Sugar and Smiles 2021</h6></div>
+        
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          <!-- End Footer -->
+
+        <!-- End of Infomation Panels -->
+      
+      </div>
+    <!-- End of Main Contnet and Footer -->
+  </body>
 </html>
