@@ -1,6 +1,29 @@
+/* Banner Styling*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+#container {
+    height: -5px;
+    width:95%;
+  }
+
+img.banner {
+    max-width:100%;
+    max-height:100%;
+}
+
+#menu {
+    width:100%;
+    float:left;
+    display: flex;
+}
+
+/* Content and Body Styling */
 :root {
     --primaryCol1 : rgb(202, 163, 112);
-    --primaryCol2 : rgb(38, 70, 130);
     --primaryCol3 : #C6E2A5;
     --primaryCol4 : #f3f3f3ff;
 }
@@ -29,32 +52,15 @@ body {
     padding-bottom:5px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-  }
 
-#container {
-    height: -5px;
-    width:95%;
-  }
-
-
-
-img.banner {
-    max-width:100%;
-    max-height:100%;
+html, body {
+    text-align: center;
+}
+p {
+    text-align: left;
 }
 
-#menu {
-    width:100%;
-    float:left;
-    display: flex;
-}
-
-
-
+/* Footer Styling*/
 #footer {
     width:inherit;
     height:inherit;
@@ -66,6 +72,7 @@ img.banner {
     float:right; 
 }
 
+/* Menu Styling */
 #menu ul {
 	list-style: none;
 	padding: 0px;
@@ -96,9 +103,3 @@ img.banner {
 	color: var(--primaryCol1);
 }
 
-html, body {
-    text-align: center;
-}
-p {
-    text-align: left;
-}
